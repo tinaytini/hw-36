@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap");
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Noto Sans JP", sans-serif;
+}
+.header {
+  background-color: #acf;
+  padding: 10px 0;
+}
+.logo {
+  margin: 0;
+  font-size: 20px;
+}
+.header__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__menu {
+  list-style: none;
+  display: none;
+  width: 50%;
+  justify-content: space-between;
+  margin: 0;
+}
+.header__menu-button {
+  background-color: transparent;
+  border: 1px solid #aaf;
+  font-size: 16px;
+  cursor: pointer;
+  display: block;
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px 0;
+}
+.gallery__item__image {
+  border-radius: 6px;
+}
+.gallery__item {
+  width: 50%;
+  margin-top: 20px;
+  text-align: center;
+}
+.gallery__item__text {
+  margin: 0;
+}
+.subscribe {
+  background-color: #0ac;
+  padding: 20px 0;
+}
+.subscribe__input,
+.subscribe__button {
+  padding: 7px 15px;
+  font-size: 16px;
+  border: none;
+  margin: 15px auto;
+  display: block;
+  width: 300px;
+  box-sizing: border-box;
+  text-align: center;
+}
+.subscribe__text {
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+}
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  box-sizing: border-box;
+}
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+  .header__menu-button {
+    display: none;
+  }
+  .header__menu {
+    display: flex;
+  }
+  .gallery__item {
+    width: calc(100% / 3);
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
